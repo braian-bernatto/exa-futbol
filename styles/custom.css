@@ -1,0 +1,140 @@
+/* Toggles */
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #29b5a8;
+}
+
+.text-dark-gold {
+  color: #46390c;
+}
+
+.player-name::before,
+.player-name::after {
+  display: block;
+  position: absolute;
+  content: '';
+  background-color: #9b8133;
+}
+
+.player-name::before {
+  width: 8.75rem;
+  left: 50%;
+  bottom: 0.1875rem;
+  transform: translateX(-50%);
+  height: 0.0625rem;
+}
+
+.player-name::after {
+  width: 0.0625rem;
+  height: 4.375rem;
+  left: 50%;
+  top: 110%;
+}
+
+.player-stats {
+  left: 3.125rem;
+  bottom: 3.125rem;
+  width: 8.125rem;
+  height: 5rem;
+}
+
+.card-image {
+  width: 135px;
+  height: 115px;
+}
+
+.player-card {
+  transform: scale(0.5);
+  position: absolute;
+}
+
+.player-card:hover {
+  transform: scale(0.6);
+  z-index: 20;
+}
+
+.formation {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas:
+    '. . LST ST RST . .'
+    '. LF . CF . RF .'
+    'LW LW . CAM . RW RW'
+    '. LM LCM CM RCM RM .'
+    'LWB LWB . CDM . RWB RWB'
+    '. LB LCB CB RCB RB .'
+    '. . . GK . . .';
+  width: 100%;
+  height: 100%;
+}
+
+.LST {
+  grid-area: LST;
+}
+.ST {
+  grid-area: ST;
+}
+.RST {
+  grid-area: RST;
+}
+.LF {
+  grid-area: LF;
+}
+.CF {
+  grid-area: CF;
+}
+.RF {
+  grid-area: RF;
+}
+.LW {
+  grid-area: LW;
+}
+.RW {
+  grid-area: RW;
+}
+.CAM {
+  grid-area: CAM;
+}
+.LM {
+  grid-area: LM;
+}
+.LCM {
+  grid-area: LCM;
+}
+.CM {
+  grid-area: CM;
+}
+.RCM {
+  grid-area: RCM;
+}
+.RM {
+  grid-area: RM;
+}
+.CDM {
+  grid-area: CDM;
+}
+.LWB {
+  grid-area: LWB;
+}
+.RWB {
+  grid-area: RWB;
+}
+.LB {
+  grid-area: LB;
+}
+.LCB {
+  grid-area: LCB;
+}
+.CB {
+  grid-area: CB;
+}
+.RCB {
+  grid-area: RCB;
+}
+.RB {
+  grid-area: RB;
+}
+.GK {
+  grid-area: GK;
+}
