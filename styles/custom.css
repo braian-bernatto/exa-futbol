@@ -31,11 +31,8 @@ input:checked ~ .dot {
   top: 110%;
 }
 
-.player-stats {
-  left: 3.125rem;
-  bottom: 3.125rem;
-  width: 8.125rem;
-  height: 5rem;
+.campo {
+  min-width: 800px;
 }
 
 .card-image {
@@ -48,8 +45,15 @@ input:checked ~ .dot {
   position: absolute;
 }
 
+.player-stats {
+  left: 3.125rem;
+  bottom: 3.125rem;
+  width: 8.125rem;
+  height: 5rem;
+}
+
 .player-card:hover {
-  transform: scale(0.6);
+  transform: scale(0.57);
   z-index: 20;
 }
 
