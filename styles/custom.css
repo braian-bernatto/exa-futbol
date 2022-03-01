@@ -60,6 +60,7 @@ input:checked ~ .dot {
 .player-card {
   transform: scale(0.5);
   position: absolute;
+  transition: transform 0.08s linear;
 }
 
 .player-stats {
