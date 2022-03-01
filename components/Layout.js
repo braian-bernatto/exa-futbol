@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
         <div className='container mx-auto'>
           <div className='mx-auto'>
             <Header />
-            <main className='mt-10'>{children}</main>
+            <main className='mt-5'>{children}</main>
             <Footer />
           </div>
         </div>

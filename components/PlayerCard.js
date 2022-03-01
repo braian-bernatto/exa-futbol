@@ -6,7 +6,9 @@ const PlayerCard = () => {
   const [players, setPlayers] = useState([])
 
   useEffect(async () => {
-    const res = await clienteAxios.get('/api/jugadors?populate=*')
+    const res = await clienteAxios.get(
+      '/api/jugadors?sort=suplente:desc&populate=*'
+    )
     setPlayers(res.data.data)
   }, [])
 
@@ -23,7 +25,11 @@ const PlayerCard = () => {
         ? players.map((player, index) => (
             <div
               key={index}
-              className={`card ${player.attributes.posicion.data.attributes.abreviaturaEng.toUpperCase()} flex items-center justify-center select-none`}
+              className={`card ${
+                player.attributes.suplente
+                  ? `SUP-${index + 1} mt-20`
+                  : player.attributes.posicion.data.attributes.abreviaturaEng.toUpperCase()
+              } flex items-center justify-center select-none`}
               onClick={() => {
                 toggle(index)
               }}

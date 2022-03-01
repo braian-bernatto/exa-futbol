@@ -50,6 +50,7 @@ input:checked ~ .dot {
 
 .campo {
   min-width: 800px;
+  min-height: 1000px;
 }
 
 .card-image {
@@ -86,9 +87,10 @@ input:checked ~ .dot {
     '. LM LCM CM RCM RM .'
     'LWB LWB . CDM . RWB RWB'
     '. LB LCB CB RCB RB .'
-    '. . . GK . . .';
+    '. . . GK . . .'
+    'SUP-7 SUP-5 SUP-3 SUP-1 SUP-2 SUP-4 SUP-6';
   width: 100%;
-  height: 100%;
+  height: 115%;
 }
 
 .LST {
@@ -159,4 +161,25 @@ input:checked ~ .dot {
 }
 .GK {
   grid-area: GK;
+}
+.SUP-1 {
+  grid-area: SUP-1;
+}
+.SUP-2 {
+  grid-area: SUP-2;
+}
+.SUP-3 {
+  grid-area: SUP-3;
+}
+.SUP-4 {
+  grid-area: SUP-4;
+}
+.SUP-5 {
+  grid-area: SUP-5;
+}
+.SUP-6 {
+  grid-area: SUP-6;
+}
+.SUP-7 {
+  grid-area: SUP-7;
 }
